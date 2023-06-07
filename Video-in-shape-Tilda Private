@@ -1,0 +1,29 @@
+<video preload="auto" class="video_source_block" playsinline autoplay loop muted>
+    <!--Укажите здесь свою ссылку на видеофайл-->
+    <source src="https://dl.dropboxusercontent.com/s/04rd70xuamxgyp3/7_%D0%9F%D1%80%D0%BE%D0%BC%D0%BE_%D0%9B%D1%8E%D0%B1%D0%BE%D0%B2%D1%8C_%D0%91%D0%BE%D0%B2%D0%BA%D1%83%D0%BD_V3.mp4?dl=0">
+</video>
+
+<script>
+    $(document).ready(function(){
+    $('.video_source_block').appendTo('.video_zero_block div');
+});
+</script>
+
+<style>
+.video_zero_block {
+  overflow: hidden; /*Сотрите это свойство, если у вас включен автоскейл*/
+}
+.video_zero_block .tn-atom {
+    background-image: none !important;
+    background-color: transparent !important;
+}
+.video_zero_block video {
+    object-fit: cover;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0px; /*Радиус скругления углов у видео*/
+}
+</style>
